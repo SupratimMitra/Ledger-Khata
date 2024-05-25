@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover, .active {
+    background: #e0e0e058;
+}
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button,
+.cash-btn,
+.due-btn {
+    padding: 10px 50px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+.cash-btn:hover,
+.due-btn:hover {
+    background-color: #2e7b30;
+}
+
+button[type="button"],
+.cash-btn[type="button"],
+.due-btn[type="button"] {
+    margin-right: 10px;
+}
+
+/* Specific styling for Cash In and Due buttons */
+.cash-btn{
+    background-color: green;
+}
+.due-btn {
+    background-color: red; /* Update the color to your preference */
+    padding: 15px 50px;
+}
+
+
+/*scrollbar*/
+
+table.scrolldown {
+    width: 100%;
+
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+}
+
+/* To display the block as level element */
+table.scrolldown tbody,
+table.scrolldown thead {
+    display: block;
+}
+
+thead tr th {
+    height: 40px;
+    line-height: 40px;
+}
+
+table.scrolldown tbody {
+
+    /* Set the height of table body */
+    height: 200px;
+
+    /* Set vertical scroll */
+    overflow-y: auto;
+
+    /* Hide the horizontal scroll */
+    overflow-x: hidden;
+}
+
+
+
+tbody td,
+thead th {
+    width: 200px;
+}
+
+td {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    form {
+        max-width: 500px;
+    }
+    li.logout {
+        height: 20%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    form {
+        max-width: 282px;
+    }
+    button,
+    .cash-btn,
+    .due-btn {
+    padding: 10px 28px;
+}
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 0px;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+}
+table.scrolldown tbody {
+
+    /* Set the height of table body */
+    height: 153px;
+
+    /* Set vertical scroll */
+    overflow-y: auto;
+
+    /* Hide the horizontal scroll */
+    overflow-x: hidden;
+}
+li.logout {
+    height: 30%;
+}
+}
